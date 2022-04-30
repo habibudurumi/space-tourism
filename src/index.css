@@ -1,0 +1,186 @@
+/** @format */
+
+@font-face {
+  font-family: BarlowCondensed-Regular;
+  src: url(fonts/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: Barlow-Regular;
+  src: url(fonts/BarlowCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: Bellefair-Regular;
+  src: url(fonts/Bellefair-Regular.ttf);
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* navbar */
+  .logo {
+    @apply sm:mt-0 md:mt-0 sm:ml-4 md:ml-8 hover:cursor-pointer hover:scale-[1.1] transition-all duration-300 w-[48px];
+  }
+
+  .menuBtn {
+    @apply h-[26px] w-[30px] md:hidden lg:hidden sm:block hover:cursor-pointer 
+          absolute top-8 right-8 hover:scale-[1.1] transition-all duration-300;
+  }
+
+  .closeBtn {
+    @apply h-[30px]  w-[30px] md:hidden lg:hidden sm:block absolute top-8 right-8 hover:cursor-pointer hover:scale-[1.1] transition-all duration-300 z-10;
+  }
+
+  .horizontal-line {
+    @apply sm:hidden md:flex lg:flex lg:bg-light-blue md:bg-transparent h-px w-[473px] opacity-50 mr-[-1.5rem] z-10;
+  }
+
+  .ul {
+    @apply sm:hidden md:flex lg:flex justify-center text-white md:px-[2rem] lg:px-[4rem] backdrop-blur-sm bg-light-blue bg-opacity-30 py-0  max-w-full;
+  }
+
+  .list {
+    @apply mx-7 lg:mx-8 flex  md:tracking-wider lg:tracking-widest md:text-[14px] lg:text-base border-y-2 border-y-transparent hover:border-b-2  hover:border-b-light-blue md:py-4;
+  }
+
+  /*title */
+
+  .title {
+    @apply sm:mt-8 md:mt-12 lg:mt-[4rem] flex sm:justify-center md:justify-start lg:justify-start lg:ml-16 sm:ml-0 md:ml-0 px-8 items-center font-condensed uppercase tracking-widest sm:text-base md:text-xl lg:text-[28px];
+  }
+
+  /* home-page */
+
+  .home-container {
+    @apply sm:bg-home-mobile md:bg-home-tablet lg:bg-home-desktop min-h-screen max-w-full sm:bg-center md:bg-top bg-no-repeat bg-cover box-border relative;
+  }
+
+  .info {
+    @apply flex sm:flex-col md:flex-col lg:flex-row items-center justify-between max-w-[1440px] mx-auto;
+  }
+
+  .info-desc {
+    @apply flex flex-col  justify-center text-light-blue sm:mt-12 sm:mx-[2rem] lg:mx-[5rem]  sm:text-center md:text-center lg:text-left   lg:mt-[7rem] md:mt-[6rem];
+  }
+
+  .info-h5 {
+    @apply font-condensed uppercase tracking-widest sm:text-base md:text-xl lg:text-2xl;
+  }
+
+  .info-h1 {
+    @apply sm:text-[80px] md:text-[130px] lg:text-[140px] uppercase font-bellefair sm:mb-4 md:mb-0 lg:mb-0 text-white;
+  }
+
+  .info-p {
+    @apply font-barlow sm:text-[15px] md:text-base lg:text-[20px] sm:w-[332px] md:w-[454px] lg:w-[410px] sm:mx-auto md:mx-auto font-normal lg:mx-0  tracking-normal;
+  }
+
+  .explore {
+    @apply flex justify-center md:mt-[8rem]
+        sm:my-[4rem] lg:mt-[12rem] lg:mr-[5rem] xl:mr-[10rem] lg:my-0;
+  }
+
+  .explore-div {
+    @apply bg-white rounded-full sm:w-[150px]  sm:h-[150px] md:w-[242px] md:h-[242px] flex justify-center items-center;
+  }
+
+  /*destination page */
+  .destination-container {
+    @apply sm:bg-dest-mobile md:bg-dest-tablet lg:bg-dest-desktop min-h-screen  max-w-full  bg-no-repeat bg-cover bg-center box-border;
+  }
+
+  .destination-image {
+    @apply sm:h-[170px] sm:w-[170px] md:w-[300px] md:h-[300px] lg:w-[350px] lg:h-[350px] mx-auto my-8;
+  }
+
+  .destination-ul {
+    @apply flex sm:justify-center lg:justify-start items-center sm:pt-3 md:pt-4 lg:pt-0;
+  }
+
+  .destination-li {
+    @apply text-light-blue uppercase font-condensed sm:mx-3 lg:mx-0 lg:mr-6 sm:mr-0 md:mr-0 pb-1 sm:text-base md:text-xl hover:cursor-pointer border-b-2 border-b-transparent sm:tracking-wider md:tracking-widest hover:border-b-white hover:text-white;
+  }
+
+  .destination-h2 {
+    @apply text-white font-bellefair uppercase sm:text-[56px] md:text-[80px] lg:text-[90px];
+  }
+
+  .paragraph {
+    @apply sm:w-[327px] md:w-[573px] lg:w-[444px] text-light-blue sm:mx-auto lg:mx-0 md:p-2 lg:p-0 sm:text-[15px] lg:text-xl md:text-lg font-normal font-barlow;
+  }
+
+  .horizontal-lin {
+    @apply sm:w-[327px] md:w-[573px] lg:w-[444px] h-px bg-light-blue mx-auto sm:my-8 lg:my-4 lg:mt-[40px] md:my-12 opacity-30;
+  }
+
+  .destination-h5 {
+    @apply text-light-blue uppercase font-condensed text-[14px] tracking-widest;
+  }
+
+  .destination-para {
+    @apply text-[28px] font-bellefair uppercase text-white mt-1;
+  }
+  /*crew page */
+  .crew-container {
+    @apply sm:bg-crew-mobile md:bg-crew-tablet lg:bg-crew-desktop min-h-screen max-w-full  bg-no-repeat bg-cover bg-center box-border;
+  }
+
+  .crew-info {
+    @apply flex sm:flex-col lg:flex-row-reverse md:flex-col-reverse lg:justify-evenly sm:mt-8 lg:mt-0;
+  }
+
+  .crew-img {
+    @apply sm:w-[220px] sm:h-[270px] md:w-[380px] md:h-[460px] mx-auto;
+  }
+
+  .crew-desc {
+    @apply sm:text-center lg:text-left sm:pb-16 lg:pb-[5rem] md:flex md:flex-col-reverse;
+  }
+
+  .crew-li {
+    @apply h-[15px] w-[15px] bg-light-blue mx-3 hover:cursor-pointer rounded-full mt-8 bg-opacity-50;
+  }
+
+  .crew-h3 {
+    @apply mt-8 font-bellefair sm:text-base md:text-2xl opacity-50 text-white uppercase mb-2;
+  }
+
+  .crew-h2 {
+    @apply font-bellefair sm:text-2xl md:text-[40px] text-white uppercase mb-4;
+  }
+
+  /*technology page */
+  .technology-container {
+    @apply sm:bg-technology-mobile md:bg-technology-tablet lg:bg-technology-desktop min-h-screen max-w-full  bg-no-repeat bg-cover bg-center box-border relative;
+  }
+
+  .technology-info {
+    @apply flex flex-col lg:flex-row items-center pb-[4rem] lg:pb-8 lg:mt-10 sm:mt-0 md:mt-0 lg:ml-[6rem] sm:ml-0 md:ml-0;
+  }
+
+  .technology-ul {
+    @apply flex sm:flex-row lg:flex-col justify-center lg:justify-start sm:mt-[34px] md:mt-[56px] lg:mt-0 lg:mr-6;
+  }
+
+  .technology-li {
+    @apply sm:h-[40px] sm:w-[40px] md:w-[60px] md:h-[60px] rounded-full border-[1px] text-light-blue border-opacity-50 flex justify-center items-center border-light-blue sm:mx-3 md:mx-4 lg:mt-8 hover:cursor-pointer hover:bg-white hover:text-dark-blue;
+  }
+
+  .technology-h5 {
+    @apply text-light-blue uppercase font-condensed tracking-widest sm:mt-[29px] md:mt-[44px] md:text-base sm:mb-[9px] md:mb-0 sm:text-center lg:text-left;
+  }
+
+  .technology-h3 {
+    @apply uppercase font-bellefair text-white sm:text-2xl sm:text-center lg:text-left md:text-[40px] md:mt-4;
+  }
+
+  .technology-img {
+    @apply absolute right-0 bottom-[80px] w-[350px] h-[400px] md:hidden sm:hidden lg:flex;
+  }
+}
+
+.main:hover {
+  border-bottom: 2px solid #d0d6f9 !important;
+}
