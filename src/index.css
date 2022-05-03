@@ -34,11 +34,11 @@
   }
 
   .horizontal-line {
-    @apply sm:hidden md:flex lg:flex lg:bg-light-blue md:bg-transparent h-px w-[473px] opacity-50 mr-[-1.5rem] z-10;
+    @apply sm:hidden md:flex lg:flex lg:bg-light-blue md:bg-transparent h-px w-[400px] opacity-50 mr-[-1.5rem] z-10;
   }
 
   .ul {
-    @apply sm:hidden md:flex lg:flex justify-center text-white md:px-[2rem] lg:px-[4rem] backdrop-blur-sm bg-light-blue bg-opacity-30 py-0  max-w-full;
+    @apply sm:hidden md:flex lg:flex justify-center text-white md:px-[2rem] lg:px-[4rem] backdrop-blur-sm bg-light-blue bg-opacity-30 py-0  min-w-[50%];
   }
 
   .list {
@@ -153,7 +153,7 @@
 
   /*technology page */
   .technology-container {
-    @apply sm:bg-technology-mobile md:bg-technology-tablet lg:bg-technology-desktop min-h-screen max-w-full  bg-no-repeat bg-cover bg-center box-border relative;
+    @apply sm:bg-technology-mobile md:bg-technology-tablet lg:bg-technology-desktop min-h-screen max-w-full  bg-no-repeat bg-cover bg-center box-border;
   }
 
   .technology-info {
@@ -177,7 +177,7 @@
   }
 
   .technology-img {
-    @apply absolute right-0 bottom-[80px] w-[350px] h-[400px] md:hidden sm:hidden lg:flex;
+    @apply absolute right-0 top-[30px] w-[350px] h-[400px] md:hidden sm:hidden lg:flex;
   }
 }
 

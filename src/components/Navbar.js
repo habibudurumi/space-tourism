@@ -23,7 +23,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='font-condensed  uppercase flex justify-between  items-center pt-6 max-w-[1385px] mx-auto '>
+    <nav className='font-condensed  uppercase flex justify-between  items-center pt-6 max-w-[1440px] mx-auto '>
       <Link to='/'>
         <img src={Logo} alt='logo' className='logo' />
       </Link>
@@ -47,7 +47,7 @@ const Navbar = () => {
         <Sidebar CloseBtn={CloseBtn} MenuBtn={MenuBtn} links={links} />
       )}
 
-      <div className='flex items-center w-[90vw]'>
+      <div className='flex items-center'>
         <div className='horizontal-line' />
         <ul className='ul'>
           {links.map((link) => {
